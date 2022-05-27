@@ -1,0 +1,152 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+		Arial, sans-serif;
+	/* margin: auto; */
+	/* max-width: 38rem; */
+	/* padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%; */
+	font-size: 25px;
+	padding: 2rem;
+}
+textarea {
+	width: calc(100% - 40vw);
+	min-height: 200px;
+	height: auto;
+	resize: vertical;
+	padding: 10px 20px;
+	font-size: 18px;
+	border: 1px solid #3e57c497;
+}
+
+.txtarea {
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.txtarea:focus {
+	outline: none;
+	border: 1px solid #3e56c4;
+}
+
+.content h1 {
+	margin: 20px;
+}
+
+pre {
+	/* font-size: 1.2rem; */
+	/* min-width: fit-content; */
+	max-width: 100%;
+	width: 100%;
+	/* height: fit-content; */
+	max-height: 100vh;
+	line-height: 1.5;
+	font-weight: 700;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow: auto;
+	/* width: 300px; */
+}
+
+.content pre {
+	width: 100%;
+}
+
+.wrap {
+	padding: 2rem;
+}
+
+.savebtn {
+	margin: 10px;
+}
+
+.bins {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+	max-width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+	.error {
+		left: 10px;
+	}
+	.bins {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		max-width: 100%;
+	}
+	textarea {
+		width: calc(100% - 5vw);
+	}
+}
+
+::selection {
+	background: #3e56c4;
+	color: #fff;
+}
+
+.bin {
+	margin: 20px;
+	background: #f0f0f0;
+	display: inline-block;
+	padding: 20px;
+	height: fit-content;
+}
+
+#pastebin {
+	margin-top: 30px;
+}
+
+footer {
+	height: 100px;
+	background: #ccc;
+	width: 100%;
+	/* position: fixed; */
+	/* bottom: 0; */
+}
+
+.singleuser {
+	font-size: 18px;
+	background: rgb(238, 238, 238);
+	padding: 5px 20px;
+	margin: 5px;
+	text-transform: capitalize;
+
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+	background-color: rgb(237, 237, 237);
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #3e56c4;
+	border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #5171fd;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #ccc;
+}
+
+.error {
+	position: fixed;
+	top: 10px;
+	left: calc(100% - 60vw);
+	background: white;
+	z-index: 1;
+	color: red;
+	font-size: 20px;
+	margin: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
